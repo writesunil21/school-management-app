@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header className="bg-orange-600 text-white px-6 py-4">
+    <header className="bg-teal-600 text-white px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Left: School Name */}
         <div className="text-2xl font-bold">

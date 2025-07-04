@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-const API_URL = 'https://school-management-backend-w19i.onrender.com/api/students';
+//const API_URL = 'http://localhost:8090/api/students';
+ const API_URL = 'https://school-management-backend-w19i.onrender.com/api/students';
 
 export default function StudentList() {
   const [students, setStudents] = useState([]);
