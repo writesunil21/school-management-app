@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-const API_URL = 'https://school-management-backend-w19i.onrender.com/api/teachers';
+//const API_URL = 'https://school-management-backend-w19i.onrender.com/api/teachers';
 //const API_URL = 'http://localhost:8090/api/teachers';
+const API_URL = `${process.env.REACT_APP_API_BASE_URL}/teachers`;
+
 
 export default function TeacherList() {
   const [teachers, setTeachers] = useState([]);
@@ -69,6 +71,8 @@ export default function TeacherList() {
     try {
       const res = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
       if (!res.ok) throw new Error('Failed to delete teacher');
+      console.log("API_URL:", API_URL);
+
       fetchTeachers();
     } catch (err) {
       setError(err.message);

@@ -7,7 +7,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Left: School Name */}
         <div className="text-2xl font-bold">
-          Utkramit High School, Basbitta
+          U.M.V Basbitta
         </div>
 
         {/* Right: Navigation Links */}

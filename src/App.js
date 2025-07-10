@@ -8,15 +8,21 @@ import StudentList from './components/StudentList';
 export default function App() {
   return (
     <Router>
-      <Header />
-      <main className="min-h-screen p-6">
-        <Routes>
-          <Route path="/" element={<p className="text-center text-xl">Welcome to the School Management System</p>} />
-          <Route path="/teachers" element={<TeacherList />} />
-          <Route path="/students" element={<StudentList />} />
-        </Routes>
-      </main>
-      <Footer />
+      {/* Full-height layout container */}
+      <div className="flex flex-col min-h-screen">
+        <Header />
+
+        {/* Main content that grows and scrolls if needed */}
+        <main className="flex-1 p-6 overflow-y-auto">
+          <Routes>
+            <Route path="/" element={<p className="text-center text-xl">Welcome to the School Management System</p>} />
+            <Route path="/teachers" element={<TeacherList />} />
+            <Route path="/students" element={<StudentList />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
     </Router>
   );
 }
