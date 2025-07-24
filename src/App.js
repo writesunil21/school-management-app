@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import TeacherList from './components/TeacherList';
 import StudentList from './components/StudentList';
+import MicTranscriber from './components/MicTranscriber';
+import AudioRecorder from './components/AudioRecorder';
 
 export default function App() {
   return (
@@ -18,6 +20,7 @@ export default function App() {
             <Route path="/" element={<p className="text-center text-xl">Welcome to the School Management System</p>} />
             <Route path="/teachers" element={<TeacherList />} />
             <Route path="/students" element={<StudentList />} />
+            <Route path="/audiorecorder" element={<AudioRecorder />} />
           </Routes>
         </main>
 
