@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import TeacherList from './components/TeacherList';
 import StudentList from './components/StudentList';
-import MicTranscriber from './components/MicTranscriber';
 import AudioRecorder from './components/AudioRecorder';
 
 export default function App() {
