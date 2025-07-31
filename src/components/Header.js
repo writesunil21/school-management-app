@@ -38,6 +38,13 @@ export default function Header() {
               >
                 Speech to Text
               </Link>
+              <Link
+                to="ocrconverter"
+                className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                OCR
+              </Link>
             </div>
           )}
         </nav>

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import TeacherList from './components/TeacherList';
 import StudentList from './components/StudentList';
 import AudioRecorder from './components/AudioRecorder';
+import OcrConverter from './components/OcrConverter';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/teachers" element={<TeacherList />} />
             <Route path="/students" element={<StudentList />} />
             <Route path="/audiorecorder" element={<AudioRecorder />} />
+            <Route path="/ocrconverter" element={<OcrConverter />} />
           </Routes>
         </main>
 
