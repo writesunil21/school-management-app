@@ -45,6 +45,20 @@ export default function Header() {
               >
                 OCR
               </Link>
+              <Link
+                to="faceregister"
+                className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                Face Register
+              </Link>
+              <Link
+                to="faceattendance"
+                className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setShowDropdown(false)}
+              >
+                Face Attendance
+              </Link>
             </div>
           )}
         </nav>

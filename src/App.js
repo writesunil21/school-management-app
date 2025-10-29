@@ -6,6 +6,8 @@ import TeacherList from './components/TeacherList';
 import StudentList from './components/StudentList';
 import AudioRecorder from './components/AudioRecorder';
 import OcrConverter from './components/OcrConverter';
+import FaceRegister from './components/FaceRegister';
+import FaceAttendance from './components/FaceAttendance';
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
             <Route path="/students" element={<StudentList />} />
             <Route path="/audiorecorder" element={<AudioRecorder />} />
             <Route path="/ocrconverter" element={<OcrConverter />} />
+            <Route path="/faceregister" element={<FaceRegister />} />
+            <Route path="/faceattendance" element={<FaceAttendance />} />
           </Routes>
         </main>
 
