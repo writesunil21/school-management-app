@@ -5,10 +5,11 @@ export default function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <header className="bg-teal-600 text-white px-6 py-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    // h-16 = 64px
+    <header className="h-16 bg-teal-600 text-white px-6 flex items-center z-20">
+      <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
         {/* Left: School Name */}
-        <div className="text-2xl font-bold">
+        <div className="text-2xl font-bold leading-none">
           U.M.V Basbitta
         </div>
 
@@ -21,39 +22,40 @@ export default function Header() {
           {/* AI Dropdown */}
           <button
             onClick={() => setShowDropdown(!showDropdown)}
-            className="hover:underline relative"
+            className="hover:underline relative ml-2"
+            aria-expanded={showDropdown}
           >
             AI
           </button>
 
           {showDropdown && (
             <div
-              className="absolute right-0 mt-2 bg-teal-600 text-black rounded shadow-lg z-50"
+              className="absolute right-0 mt-2 bg-white text-black rounded shadow-lg z-50"
               onMouseLeave={() => setShowDropdown(false)}
             >
               <Link
-                to="audiorecorder"
+                to="/audiorecorder"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
                 Speech to Text
               </Link>
               <Link
-                to="ocrconverter"
+                to="/ocrconverter"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
                 OCR
               </Link>
               <Link
-                to="faceregister"
+                to="/faceregister"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >
                 Face Register
               </Link>
               <Link
-                to="faceattendance"
+                to="/faceattendance"
                 className="block px-4 py-2 hover:bg-gray-100"
                 onClick={() => setShowDropdown(false)}
               >

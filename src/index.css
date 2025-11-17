@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* layout variables */
+:root {
+  --header-height: 64px; /* matches h-16 */
+  --footer-height: 64px; /* matches h-16 */
+}
 
+/* float animation for Home card */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* keep html/body sizing normal */
 html, body {
-  overflow-x: hidden;
+  height: 100%;
   margin: 0;
-  padding: 0;
-  overflow-y: auto;
 }
